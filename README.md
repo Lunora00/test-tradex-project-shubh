@@ -3,7 +3,7 @@
 ## How to Run
 
 ```
-git clone https://github.com/PumaPulse-Inc/Tradex---software---engineer.git
+git clone https://github.com/PumaPulse-Inc/Tradex-test-project.git
 cd backend && npm install && npm start
 cd ../frontend && npm install && npm run dev
 ```
