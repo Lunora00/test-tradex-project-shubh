@@ -382,7 +382,7 @@ const Dashboard = () => {
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <BarChart3 className="w-5 h-5 text-primary" />
-              Recent Trades
+              Recent Trades-0283423423432423
             </CardTitle>
             <CardDescription>Your latest trading activity</CardDescription>
           </CardHeader>
