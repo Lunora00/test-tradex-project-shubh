@@ -5,6 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Button } from '@/components/ui/button';
 import { TrendingUp, Users, Target, Award, Activity, BarChart3, Zap, TrendingDown, ArrowRight, Sparkles, Rocket, Crown } from 'lucide-react';
 import { LineChart, Line, AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+import TrickerBar from "../components/TrickerBar"
 
 const Dashboard = () => {
   const [user, setUser] = useState<any>(null);
@@ -57,7 +58,10 @@ const Dashboard = () => {
 
   return (
     <div className="min-h-screen bg-background">
+                    <TrickerBar />
+
       <Header />
+
       <div className="container mx-auto px-4 py-8">
         {/* New Strategies Advertisement */}
         <div className="mb-8 relative overflow-hidden rounded-2xl bg-gradient-to-br from-emerald-500 via-teal-500 to-cyan-600 p-1">
@@ -121,6 +125,8 @@ const Dashboard = () => {
           <h1 className="text-4xl font-bold mb-2">Welcome back, {user?.name}!</h1>
           <p className="text-muted-foreground">Here's your trading overview</p>
         </div>
+
+
 
         {/* Hero Section with Trading Visual */}
         <div className="mb-8 relative overflow-hidden rounded-2xl bg-gradient-to-br from-emerald-500 via-cyan-500 to-blue-600 p-8 text-white shadow-2xl">

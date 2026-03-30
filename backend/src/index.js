@@ -5,6 +5,7 @@ const cors = require('cors');
 const authRoutes = require('./routes/auth');
 const discussionRoutes = require('./routes/discussion');
 const strategyRoutes = require('./routes/strategy');
+const marketRoutes = require("./routes/market");
 const { errorHandler } = require('./middleware/errorHandler');
 const logger = require('./middleware/logger');
 
@@ -24,6 +25,7 @@ app.get('/health', (req, res) => {
 app.use('/api/auth', authRoutes);
 app.use('/api/discussions', discussionRoutes);
 app.use('/api/strategies', strategyRoutes);
+app.use("/api/market", marketRoutes);
 
 // Error handling
 app.use(errorHandler);
