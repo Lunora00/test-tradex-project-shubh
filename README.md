@@ -7,6 +7,7 @@ git clone https://github.com/PumaPulse-Inc/Tradex-test-project.git
 cd backend && npm install && npm start
 cd ../frontend && npm install && npm run dev
 ```
+// market widget feature
 
 Open [http://localhost:8080](http://localhost:8080)
 
