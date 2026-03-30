@@ -264,8 +264,8 @@ export default function TickerBar() {
                   style={{
                     display: "inline-flex",
                     alignItems: "center",
-                    gap: 6,
-                    marginRight: 36,
+                    gap: 5,
+                    marginRight: 32,
                     padding: "0 8px",
                     height: 28,
                     borderRadius: 4,
@@ -289,7 +289,7 @@ export default function TickerBar() {
           </div>
         ) : (
           <div style={{ color: "#8b949e", fontSize: 12, paddingLeft: 16 }}>
-            Loading market data...
+            Loading..
           </div>
         )}
 

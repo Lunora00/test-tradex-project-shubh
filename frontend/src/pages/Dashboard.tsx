@@ -379,13 +379,6 @@ const Dashboard = () => {
 
         {/* Recent Trades */}
         <Card>
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2">
-              <BarChart3 className="w-5 h-5 text-primary" />
-              Recent Trades-0283423423432423
-            </CardTitle>
-            <CardDescription>Your latest trading activity</CardDescription>
-          </CardHeader>
           <CardContent>
             <div className="space-y-3">
               {recentTrades.map((trade) => (
